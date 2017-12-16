@@ -2,7 +2,7 @@ const mocha = require('mocha');
 const chai = require('chai');
 const describe = mocha.describe;
 const it = mocha.it;
-const db = require('../src/database')('test');
+const db = require('../src/bth-mongodb-crud')('test');
 const expect = chai.expect;
 
 describe('Test database module', function () {
