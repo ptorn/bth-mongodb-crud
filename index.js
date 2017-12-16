@@ -4,4 +4,4 @@
  * @type {object}
  */
 
-module.exports = require('./src/bth-mongodb-crud');
+module.exports = require('./src/bth-mongodb-crud').dbConnection;
