@@ -19,7 +19,7 @@ It will default to **mongodb://127.0.0.1:27017/**
 
 2. Initialize
 ```
-const dbObj = require(bth-mongodb-crud)(database)
+const dbObj = require(bth-mongodb-crud)('name of database')
 ```
 
 3. Usage
@@ -68,7 +68,9 @@ dbObj.findInCollection(collection, criteria, projection, limit);  // returns a p
 ## Test
 
 Run tests with mocha, eslint and mongodb in a docker container.
+
 `npm -run docker-mongodb`
+
 `npm run test`
 
 That's it now you are all set.
