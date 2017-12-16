@@ -1,0 +1,41 @@
+{
+  "name": "ptorn-mongodb",
+  "version": "1.0.0",
+  "description": "Mongodb CRUD",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "eslint": "eslint .; exit 0",
+    "posttest": "npm run eslint",
+    "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js'",
+    "test-watch": "mocha 'test/**/*.js' --watch",
+    "docker-mongodb": "docker-compose mongodb -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptorn/bth-mongodb.git"
+  },
+  "keywords": [
+    "MongoDB"
+  ],
+  "author": "Peder Tornberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptorn/bth-mongodb/issues"
+  },
+  "homepage": "https://github.com/ptorn/bth-mongodb#readme",
+  "dependencies": {
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.13.1",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^4.0.1",
+    "mongo-mock": "^2.8.0",
+    "nyc": "^11.4.1"
+  }
+}
