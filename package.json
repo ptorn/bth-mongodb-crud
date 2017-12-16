@@ -9,8 +9,9 @@
   "scripts": {
     "eslint": "eslint .; exit 0",
     "posttest": "npm run eslint",
-    "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js'",
-    "test-watch": "mocha 'test/**/*.js' --watch",
+    "test": "nyc --reporter=html --reporter=text mocha 'test/*.js'",
+    "test-watch": "mocha 'test/*.js' --watch",
+    "test-scrutinizer": "nyc --all --reporter=clover mocha test/*.js",
     "docker-mongodb": "docker-compose mongodb -d"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "mongodb": "^2.2.33"
   },
   "devDependencies": {
+    "codecov": "^3.0.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.13.1",
