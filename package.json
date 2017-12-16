@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ptorn/bth-mongodb.git"
+    "url": "git+https://github.com/ptorn/bth-mongodb-crud.git"
   },
   "keywords": [
     "MongoDB"
