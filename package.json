@@ -1,5 +1,5 @@
 {
-  "name": "ptorn-mongodb",
+  "name": "bth-mongodb-crud",
   "version": "1.0.0",
   "description": "Mongodb CRUD",
   "main": "index.js",
