@@ -12,6 +12,7 @@
     "test": "nyc --reporter=html --reporter=text mocha 'test/*.js'",
     "test-watch": "mocha 'test/*.js' --watch",
     "test-scrutinizer": "nyc --all --reporter=clover mocha test/*.js",
+    "report-codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "docker-mongodb": "docker-compose mongodb -d"
   },
   "repository": {
