@@ -8,7 +8,7 @@
   "scripts": {
     "eslint": "eslint .; exit 0",
     "posttest": "npm run eslint",
-    "test": "nyc --reporter=html --reporter=text mocha 'test/*.js'",
+    "test": "nyc --reporter=html --reporter=text mocha 'test/*.js' --exit",
     "test-watch": "mocha 'test/*.js' --watch",
     "test-scrutinizer": "nyc --all --reporter=clover mocha test/*.js",
     "report-codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
@@ -31,9 +31,9 @@
     "mongodb": "^2.2.33"
   },
   "devDependencies": {
-    "codecov": "^3.0.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
+    "codecov": "^3.0.0",
     "eslint": "^4.13.1",
     "eslint-plugin-react": "^7.5.1",
     "mocha": "^4.0.1",
